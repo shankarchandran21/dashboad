@@ -1,0 +1,121 @@
+.admin__container{
+  background-color: rgb(239, 248, 255);  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin__container-form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.admin__container-form__img{
+    width: 100%;
+    height: auto;
+    background-color:rgb(226, 236, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1.2;
+    padding: 80px 0px;
+}
+.admin__container-form__img img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(-16px 10px 10px rgb(183, 220, 246 ));  /* left and right,up and down ,color brightness ,color */
+}
+.admin__container-form__content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    flex: 1.5;
+}
+
+.admin__container-form__content h3{
+    text-align: center;
+    color: rgb(0, 6, 57);
+}
+
+.admin__container-form__content p{
+    text-align: center;
+    color: grey;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.admin__container-form__content-flied{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.admin__container-form__content input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.admin__container-form__content-input{
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    background-color:white;
+    
+}
+.admin__container-form__content-input__icon{
+    font-size: 30px;
+    background-color:rgba(221, 217, 217, 0.911);
+    padding: 5px;
+    border-radius: 0 50% 50% 0;
+}
+
+.login-button{
+    background-color: rgb(36, 55, 98);
+    color: white;
+    border: 1px solid rgb(36, 55, 98);
+    padding: 8px;
+    width: 70%;
+    cursor: pointer;
+}
+
+.login-button:hover{
+    opacity: 0.8;
+}
+
+
+.admin__condition{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    background-color:white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .admin__container-form{
+        flex-direction: column;
+     
+    }
+    .admin__container-form__img{
+        padding: 0px 0;
+    }
+}
